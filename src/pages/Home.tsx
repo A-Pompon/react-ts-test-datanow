@@ -43,22 +43,24 @@ export const Home: React.FC = () => {
 
   return (
     <div className='home-container'>
-        <h1>Home</h1>
+        <h1>Randomness Beacon</h1>
         
         <button onClick={handleOnClick}>Show me the last random value</button>
         
         {showPulse && result?.data !== null && (
             <div className="pulse-container">
-                <p className='para'>Le pulse est : {result?.data?.pulse?.outputValue}</p>
-                <p>La date du pulse est : {result?.data?.pulse?.timeStamp.toString()}</p>
+                <p className='para'>Output value is : </p>
+                <p className='para'>{result?.data?.pulse?.outputValue}</p>
+                <p className='para'>Date of output value : </p>
+                <p className='para'>{result?.data?.pulse?.timeStamp.toString()}</p>
             </div>
         )}
 
         {
             result?.status === "error" && (
                 <div className="error">
-                    <h1>Un problème est survenu :</h1>
-                    <h2>{result.error?.message}</h2>
+                    <h2>A problem has occurred :</h2>
+                    <p>{result.error?.message}</p>
                 </div>
             )
         }

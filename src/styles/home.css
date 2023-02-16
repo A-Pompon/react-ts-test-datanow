@@ -1,5 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
 body {
-    background-color: rgb(28, 28, 28);
+    background-color: #000000;
+    font-family: "Poppins", sans-serif;
+    background-image: url(../assets/brick.png);
+}
+
+h1 {
+    color: #f8f8f8;
+    padding: 2rem 0;
+}
+
+h2 {
+    color: #f8f8f8;
+    padding: 2rem 0;
+}
+
+p {
+    color: #f8f8f8;
+    font-size: large;
+    padding-bottom: 2rem;
+}
+
+button {
+    font-size: medium;
+    font-weight: bold;
+    color: #f8f8f8;
+    border: solid 2px #f8f8f8;
+    background-color: #00201f71;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+button:hover {
+    color: #00201f;
+    background-color: #f8f8f869;
+    border: solid 2px #00201f;
+    cursor: pointer;
+}
+
+button:active {
+    color: #b1d2db;
+    border: solid 2px #b1d2db;
 }
 
 .home-container {
@@ -15,6 +67,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: solid 2px #f8f8f8;
+    border-radius: 15px;
+    margin: 2rem;
+    padding-top: 2rem;
+    background-color: #b1d2db2d;
 }
 
 .para {
@@ -23,30 +80,12 @@ body {
     word-wrap: break-word;
 }
 
-h1 {
-    color: blueviolet;
-}
-
-p {
-    color: blueviolet;
-    font-size: large;
-}
-
-button {
-    color: blueviolet;
-    background-color: rgba(137, 43, 226, 0.134);
-    border: solid 1px blueviolet;;
-    border-radius: 5px;
-    padding: 1rem;
-}
-
-button:hover {
-    color: white;
-    border: solid 1px white;
-    background-color: rgba(255, 255, 255, 0.134);
-}
-
-button:active {
-    color: rgb(255, 129, 251);
-    border: solid 1px rgb(255, 129, 251);
+.error {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-wrap: break-word;
 }
