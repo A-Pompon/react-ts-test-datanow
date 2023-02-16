@@ -19,11 +19,13 @@ body {
 h1 {
     color: #f8f8f8;
     padding: 2rem 0;
+    text-align: center;
 }
 
 h2 {
     color: #f8f8f8;
     padding: 2rem 0;
+    text-align: center;
 }
 
 p {
